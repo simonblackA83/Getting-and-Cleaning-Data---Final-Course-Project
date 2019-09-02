@@ -64,6 +64,8 @@ grouped_tidy_means = selected_set %>%
   summarise_all( mean)
 
 write.csv(grouped_tidy_means, file = "grouped_tidy_means.csv")
+write.table(grouped_tidy_means, "tidy_data.txt", row.names = FALSE, 
+            quote = FALSE)
 
 
 
